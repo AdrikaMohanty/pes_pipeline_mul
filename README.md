@@ -1,4 +1,6 @@
 # pes_pipeline_mul
+<details>
+   <summary>GLS </summary>
 
 The design chosen here is a pipelined multiplier 
 
@@ -58,3 +60,27 @@ gtkwave tb_pes_pipeline_mul.v
 
 
 From this you can observe that the post-synthesis and pre synthesis simulation are same .
+
+</details>
+
+<details>
+    <summary>
+        POST-SYNTHESIS AND OPENLANE FLOW
+    </summary>
+
+### Synthesis :
+
+
+Open the opnelane in interactive mode and run your desisgn 
+
+```
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design pes_pipeline_mul
+run_synthesis
+```
+
+
+![image](https://github.com/AdrikaMohanty/pes_pipeline_mul/assets/84654826/efd06c0c-0217-4743-8ab6-e903913b6a5a)
+
+</details>
