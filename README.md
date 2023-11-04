@@ -84,6 +84,8 @@ run_synthesis
 ![image](https://github.com/AdrikaMohanty/pes_pipeline_mul/assets/84654826/efd06c0c-0217-4743-8ab6-e903913b6a5a)
 
 
+## Floorplanning 
+
 ```
 run_floorplan
 ```
@@ -101,6 +103,7 @@ magic -T /home/adrika/sky130 lef read /home/adrika/OpenLane/designs/pes_pipeline
 
 ![image](https://github.com/AdrikaMohanty/pes_pipeline_mul/assets/84654826/75871203-a0d6-4827-8a6d-cd14d4011a71)
 
+## Placement 
 
 ```
 run_placement
@@ -110,6 +113,17 @@ run_placement
 
 
 ![image](https://github.com/AdrikaMohanty/pes_pipeline_mul/assets/84654826/4f187b53-c694-47df-81f1-8f63d8f6b64f)
+
+
+## Clock tree synthesis 
+
+After placement we do the clock tree synthesis
+```
+run_cts
+```
+
+![image](https://github.com/AdrikaMohanty/pes_pipeline_mul/assets/84654826/93184502-4e80-4292-b2e9-74b14cab5500)
+
 
 
 
