@@ -83,4 +83,36 @@ run_synthesis
 
 ![image](https://github.com/AdrikaMohanty/pes_pipeline_mul/assets/84654826/efd06c0c-0217-4743-8ab6-e903913b6a5a)
 
+
+```
+run_floorplan
+```
+
+after this to view floor plan run the following commands 
+
+```
+cd /home/adrika/OpenLane/designs/pes_pipeline_mul/runs/RUN_2023.11.04_08.30.59/results/floorplan
+
+magic -T /home/adrika/sky130 lef read /home/adrika/OpenLane/designs/pes_pipeline_mul/runs/RUN_2023.11.04_08.30.59/tmp/merged.nom.lef def read pes_pipeline_mul.def &
+```
+
+
+
+
+![image](https://github.com/AdrikaMohanty/pes_pipeline_mul/assets/84654826/75871203-a0d6-4827-8a6d-cd14d4011a71)
+
+
+```
+run_placement
+```
+
+![image](https://github.com/AdrikaMohanty/pes_pipeline_mul/assets/84654826/561f359a-dabc-4f41-b38b-414df5c2086f)
+
+
+![image](https://github.com/AdrikaMohanty/pes_pipeline_mul/assets/84654826/4f187b53-c694-47df-81f1-8f63d8f6b64f)
+
+
+
+
+
 </details>
