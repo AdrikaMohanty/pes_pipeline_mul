@@ -125,7 +125,29 @@ run_cts
 ![image](https://github.com/AdrikaMohanty/pes_pipeline_mul/assets/84654826/93184502-4e80-4292-b2e9-74b14cab5500)
 
 
+## PDN 
 
+After clock tree synthesis generate the pdn
+```
+gen_pdn
+```
+
+## Routing 
+
+The final step now is routing 
+
+If you dont get the output there is a chance that the area you decided in config file might be too small , in such situation please reconsider changing it 
+
+
+
+
+### For automated flow 
+
+```
+cd OpenLane
+sudo make mount
+./flow.tcl -design <design name>
+```
 
 
 
